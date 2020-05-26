@@ -1,3 +1,4 @@
+# no telling what this does
 asdgklpnmasdf
 asdfg
 mlodfsg
@@ -6,4 +7,46 @@ lmdfg
 p
 dfg
 
-# no telling what this does
+
+python this.py
+-------------------
+
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Sep 27 09:27:31 2019
+
+@author: me
+"""
+
+import numpy as np
+import pandas as pd
+# This works side by side columns   TEXT FILE
+color_table = pd.io.parsers.read_table("C:\Backups_Keep_ROBONLY_2020-GenDevOps\Python\DataFiles\colors.txt")
+print(color_table)
+
+
+C:\Backups_Keep_ROBONLY_2020-GenDevOps\Python\DataFiles\colors.txt
+
+<<<< INPUT >>>>>
+Color	Value
+RED	"1"
+ORANGE	"2"
+YELLOW	"3"
+GREEN	"4"
+BLUE	"5"
+INDIGO	"6"
+VIOLET	"7"
+
+<<<< OUTPUT >>>>
+-----------------
+                          Color  Value
+0                           RED    1.0
+1                        ORANGE    2.0
+2                        YELLOW    3.0
+3                         GREEN    4.0
+4                          BLUE    5.0
+5                        INDIGO    6.0
+6                        VIOLET    7.0
+
+
+
